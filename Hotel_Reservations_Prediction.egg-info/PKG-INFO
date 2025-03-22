@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: Hotel-Reservations-Prediction
+Version: 0.1
+Author: Nasir Hussain
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: license-file
+Dynamic: requires-dist
