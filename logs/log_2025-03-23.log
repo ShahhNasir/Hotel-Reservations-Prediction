@@ -1,0 +1,39 @@
+2025-03-23 15:45:39,520 - INFO - successfully read the yaml file
+2025-03-23 15:46:12,344 - INFO - successfully read the yaml file
+2025-03-23 15:46:12,345 - INFO - Data Ingestion started with my_bucket_first2807 and file name is Hotel_Reservations.csv
+2025-03-23 15:46:12,345 - INFO - Starting data ingestion process
+2025-03-23 15:46:15,473 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+2025-03-23 15:46:19,429 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+2025-03-23 15:46:24,460 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+2025-03-23 15:46:24,460 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-03-23 15:46:24,463 - ERROR - Error while downloading the csv file
+2025-03-23 15:46:24,463 - INFO - Data Ingestion completed
+2025-03-23 15:49:24,228 - INFO - successfully read the yaml file
+2025-03-23 15:49:24,228 - INFO - Data Ingestion started with my_bucket_first2807 and file name is Hotel_Reservations.csv
+2025-03-23 15:49:24,228 - INFO - Starting data ingestion process
+2025-03-23 15:49:27,232 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+2025-03-23 15:49:31,176 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+2025-03-23 15:49:36,114 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+2025-03-23 15:49:36,114 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-03-23 15:49:36,115 - ERROR - Error while downloading the csv file
+2025-03-23 15:49:36,115 - ERROR - CustomException : Error in F:\Data Science Projects\Hotel-Reservations-Prediction\src\data_ingestion.py , line 31 : Failed to download csv file
+2025-03-23 15:49:36,115 - INFO - Data Ingestion completed
+2025-03-23 15:53:47,256 - INFO - successfully read the yaml file
+2025-03-23 15:53:47,256 - INFO - Data Ingestion started with my_bucket_first2807 and file name is Hotel_Reservations.csv
+2025-03-23 15:53:47,257 - INFO - Starting data ingestion process
+2025-03-23 15:53:50,274 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+2025-03-23 15:53:54,354 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+2025-03-23 15:53:59,435 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+2025-03-23 15:53:59,435 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-03-23 15:53:59,435 - ERROR - Error while downloading the csv file
+2025-03-23 15:53:59,436 - ERROR - CustomException : Error in F:\Data Science Projects\Hotel-Reservations-Prediction\src\data_ingestion.py , line 31 : Failed to download csv file
+2025-03-23 15:53:59,436 - INFO - Data Ingestion completed
+2025-03-23 16:00:08,369 - INFO - successfully read the yaml file
+2025-03-23 16:00:08,404 - INFO - Data Ingestion started with my_bucket_first2807 and file name is Hotel_Reservations.csv
+2025-03-23 16:00:08,405 - INFO - Starting data ingestion process
+2025-03-23 16:00:11,359 - INFO - CSV file is successfully downloaded to artifacts/raw\raw.csv
+2025-03-23 16:00:11,359 - INFO - Starting the splitting process
+2025-03-23 16:00:11,991 - INFO - Train data saved to artifacts/raw\train.csv
+2025-03-23 16:00:11,991 - INFO - Test data saved to artifacts/raw\test.csv
+2025-03-23 16:00:12,043 - INFO - Data ingestion completed sucessfully
+2025-03-23 16:00:12,043 - INFO - Data Ingestion completed

@@ -1,0 +1,4 @@
+data_ingestion:
+  bucket_name: "my_bucket_first2807"
+  bucket_file_name: "Hotel_Reservations.csv"
+  train_test_ratio: 0.8
