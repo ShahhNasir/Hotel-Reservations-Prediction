@@ -1,0 +1,92 @@
+2025-04-15 19:09:27,090 - INFO - successfully read the yaml file
+2025-04-15 19:09:27,091 - INFO - Loading Data from raw directory
+2025-04-15 19:09:27,091 - INFO - Loading data
+2025-04-15 19:09:27,469 - INFO - Loading data
+2025-04-15 19:09:27,517 - INFO - Starting our Data Processing Step
+2025-04-15 19:09:27,517 - INFO - Dropping the columns
+2025-04-15 19:09:27,591 - INFO - applying label encoding
+2025-04-15 19:09:27,613 - INFO - Label mappings are :
+2025-04-15 19:09:27,613 - INFO - Error during preprocess step 'builtin_function_or_method' object is not iterable
+2025-04-15 19:09:27,614 - INFO - Error during preprocessing pipeline Error in F:\Data Science Projects\Hotel-Reservations-Prediction\src\data_preprocessing.py , line 52 : Error while preprocess data
+2025-04-15 19:12:37,777 - INFO - successfully read the yaml file
+2025-04-15 19:12:37,778 - INFO - Loading Data from raw directory
+2025-04-15 19:12:37,778 - INFO - Loading data
+2025-04-15 19:12:37,855 - INFO - Loading data
+2025-04-15 19:12:37,873 - INFO - Starting our Data Processing Step
+2025-04-15 19:12:37,873 - INFO - Dropping the columns
+2025-04-15 19:12:37,876 - INFO - applying label encoding
+2025-04-15 19:12:37,897 - INFO - Label mappings are :
+2025-04-15 19:12:37,897 - INFO - Error during preprocess step 'builtin_function_or_method' object is not iterable
+2025-04-15 19:12:37,897 - INFO - Error during preprocessing pipeline Error in F:\Data Science Projects\Hotel-Reservations-Prediction\src\data_preprocessing.py , line 52 : Error while preprocess data
+2025-04-15 19:15:24,525 - INFO - successfully read the yaml file
+2025-04-15 19:15:24,526 - INFO - Loading Data from raw directory
+2025-04-15 19:15:24,526 - INFO - Loading data
+2025-04-15 19:15:24,609 - INFO - Loading data
+2025-04-15 19:15:24,631 - INFO - Starting our Data Processing Step
+2025-04-15 19:15:24,631 - INFO - Dropping the columns
+2025-04-15 19:15:24,635 - INFO - applying label encoding
+2025-04-15 19:15:24,658 - INFO - Doing skewness handling
+2025-04-15 19:15:24,712 - INFO - Error during preprocess step "['no_of_childrens', 'load_time'] not in index"
+2025-04-15 19:15:24,712 - INFO - Error during preprocessing pipeline Error in F:\Data Science Projects\Hotel-Reservations-Prediction\src\data_preprocessing.py , line 54 : Error while preprocess data
+2025-04-15 19:26:14,302 - INFO - successfully read the yaml file
+2025-04-15 19:26:14,303 - INFO - Loading Data from raw directory
+2025-04-15 19:26:14,303 - INFO - Loading data
+2025-04-15 19:26:14,377 - INFO - Loading data
+2025-04-15 19:26:14,395 - INFO - Starting our Data Processing Step
+2025-04-15 19:26:14,395 - INFO - Dropping the columns
+2025-04-15 19:26:14,399 - INFO - Applying label encoding
+2025-04-15 19:26:14,462 - INFO - Label mappings are:
+2025-04-15 19:26:14,462 - INFO - type_of_meal_plan : {'Meal Plan 1': np.int64(0), 'Meal Plan 2': np.int64(1), 'Meal Plan 3': np.int64(2), 'Not Selected': np.int64(3)}
+2025-04-15 19:26:14,462 - INFO - room_type_reserved : {'Room_Type 1': np.int64(0), 'Room_Type 2': np.int64(1), 'Room_Type 3': np.int64(2), 'Room_Type 4': np.int64(3), 'Room_Type 5': np.int64(4), 'Room_Type 6': np.int64(5), 'Room_Type 7': np.int64(6)}
+2025-04-15 19:26:14,462 - INFO - market_segment_type : {'Aviation': np.int64(0), 'Complementary': np.int64(1), 'Corporate': np.int64(2), 'Offline': np.int64(3), 'Online': np.int64(4)}
+2025-04-15 19:26:14,462 - INFO - booking_status : {'Canceled': np.int64(0), 'Not_Canceled': np.int64(1)}
+2025-04-15 19:26:14,462 - INFO - Doing skewness handling
+2025-04-15 19:26:14,463 - ERROR - Error during preprocess step: "['no_of_childrens', 'load_time'] not in index"
+2025-04-15 19:26:14,463 - ERROR - Error during preprocessing pipeline: Error in F:\Data Science Projects\Hotel-Reservations-Prediction\src\data_preprocessing.py , line 54 : Error while preprocessing data
+2025-04-15 19:26:33,239 - INFO - successfully read the yaml file
+2025-04-15 19:26:33,239 - INFO - Loading Data from raw directory
+2025-04-15 19:26:33,239 - INFO - Loading data
+2025-04-15 19:26:33,338 - INFO - Loading data
+2025-04-15 19:26:33,364 - INFO - Starting our Data Processing Step
+2025-04-15 19:26:33,364 - INFO - Dropping the columns
+2025-04-15 19:26:33,370 - INFO - Applying label encoding
+2025-04-15 19:26:33,405 - INFO - Label mappings are:
+2025-04-15 19:26:33,406 - INFO - type_of_meal_plan : {'Meal Plan 1': np.int64(0), 'Meal Plan 2': np.int64(1), 'Meal Plan 3': np.int64(2), 'Not Selected': np.int64(3)}
+2025-04-15 19:26:33,406 - INFO - room_type_reserved : {'Room_Type 1': np.int64(0), 'Room_Type 2': np.int64(1), 'Room_Type 3': np.int64(2), 'Room_Type 4': np.int64(3), 'Room_Type 5': np.int64(4), 'Room_Type 6': np.int64(5), 'Room_Type 7': np.int64(6)}
+2025-04-15 19:26:33,406 - INFO - market_segment_type : {'Aviation': np.int64(0), 'Complementary': np.int64(1), 'Corporate': np.int64(2), 'Offline': np.int64(3), 'Online': np.int64(4)}
+2025-04-15 19:26:33,406 - INFO - booking_status : {'Canceled': np.int64(0), 'Not_Canceled': np.int64(1)}
+2025-04-15 19:26:33,406 - INFO - Doing skewness handling
+2025-04-15 19:26:33,407 - ERROR - Error during preprocess step: "['no_of_childrens', 'load_time'] not in index"
+2025-04-15 19:26:33,407 - ERROR - Error during preprocessing pipeline: Error in F:\Data Science Projects\Hotel-Reservations-Prediction\src\data_preprocessing.py , line 54 : Error while preprocessing data
+2025-04-15 19:28:47,800 - INFO - successfully read the yaml file
+2025-04-15 19:28:47,800 - INFO - Loading Data from raw directory
+2025-04-15 19:28:47,800 - INFO - Loading data
+2025-04-15 19:28:47,886 - INFO - Loading data
+2025-04-15 19:28:47,907 - INFO - Starting our Data Processing Step
+2025-04-15 19:28:47,907 - INFO - Dropping the columns
+2025-04-15 19:28:47,912 - INFO - Applying label encoding
+2025-04-15 19:28:47,937 - INFO - Label mappings are:
+2025-04-15 19:28:47,937 - INFO - type_of_meal_plan : {'Meal Plan 1': np.int64(0), 'Meal Plan 2': np.int64(1), 'Meal Plan 3': np.int64(2), 'Not Selected': np.int64(3)}
+2025-04-15 19:28:47,937 - INFO - room_type_reserved : {'Room_Type 1': np.int64(0), 'Room_Type 2': np.int64(1), 'Room_Type 3': np.int64(2), 'Room_Type 4': np.int64(3), 'Room_Type 5': np.int64(4), 'Room_Type 6': np.int64(5), 'Room_Type 7': np.int64(6)}
+2025-04-15 19:28:47,937 - INFO - market_segment_type : {'Aviation': np.int64(0), 'Complementary': np.int64(1), 'Corporate': np.int64(2), 'Offline': np.int64(3), 'Online': np.int64(4)}
+2025-04-15 19:28:47,937 - INFO - booking_status : {'Canceled': np.int64(0), 'Not_Canceled': np.int64(1)}
+2025-04-15 19:28:47,937 - INFO - Doing skewness handling
+2025-04-15 19:28:47,999 - INFO - Starting our Data Processing Step
+2025-04-15 19:28:47,999 - INFO - Dropping the columns
+2025-04-15 19:28:48,001 - INFO - Applying label encoding
+2025-04-15 19:28:48,013 - INFO - Label mappings are:
+2025-04-15 19:28:48,013 - INFO - type_of_meal_plan : {'Meal Plan 1': np.int64(0), 'Meal Plan 2': np.int64(1), 'Meal Plan 3': np.int64(2), 'Not Selected': np.int64(3)}
+2025-04-15 19:28:48,013 - INFO - room_type_reserved : {'Room_Type 1': np.int64(0), 'Room_Type 2': np.int64(1), 'Room_Type 3': np.int64(2), 'Room_Type 4': np.int64(3), 'Room_Type 5': np.int64(4), 'Room_Type 6': np.int64(5), 'Room_Type 7': np.int64(6)}
+2025-04-15 19:28:48,013 - INFO - market_segment_type : {'Aviation': np.int64(0), 'Complementary': np.int64(1), 'Corporate': np.int64(2), 'Offline': np.int64(3), 'Online': np.int64(4)}
+2025-04-15 19:28:48,013 - INFO - booking_status : {'Canceled': np.int64(0), 'Not_Canceled': np.int64(1)}
+2025-04-15 19:28:48,013 - INFO - Doing skewness handling
+2025-04-15 19:28:48,017 - INFO - Handling Imbalanced data
+2025-04-15 19:28:49,039 - INFO - Data Balanced Successfully
+2025-04-15 19:28:49,041 - INFO - Starting our Feature selection process
+2025-04-15 19:28:55,807 - INFO - Features selected: ['lead_time', 'avg_price_per_room', 'no_of_special_requests', 'arrival_month', 'arrival_date', 'market_segment_type', 'no_of_week_nights', 'no_of_weekend_nights', 'arrival_year', 'no_of_adults']
+2025-04-15 19:28:55,810 - INFO - Feature selection completed successfully
+2025-04-15 19:28:55,820 - INFO - Saving our data to artifacts/processed\processed_train.csv
+2025-04-15 19:28:56,093 - INFO - Data saved successfully to artifacts/processed\processed_train.csv
+2025-04-15 19:28:56,093 - INFO - Saving our data to artifacts/processed\processed_test.csv
+2025-04-15 19:28:56,126 - INFO - Data saved successfully to artifacts/processed\processed_test.csv
+2025-04-15 19:28:56,126 - INFO - Data Processing completed successfully
