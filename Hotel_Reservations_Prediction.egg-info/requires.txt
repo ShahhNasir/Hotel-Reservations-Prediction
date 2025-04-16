@@ -3,3 +3,6 @@ numpy
 google-cloud-storage
 scikit-learn
 pyyaml
+imblearn
+lightgbm
+mlflow
