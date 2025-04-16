@@ -1,0 +1,15 @@
+artifact_uri: file:///F:/Data%20Science%20Projects/Hotel-Reservations-Prediction/mlruns/0/0203889fffde42e588b86a4aebf5efc5/artifacts
+end_time: 1744788920884
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0203889fffde42e588b86a4aebf5efc5
+run_name: merciful-quail-214
+run_uuid: 0203889fffde42e588b86a4aebf5efc5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744788906231
+status: 3
+tags: []
+user_id: shahh

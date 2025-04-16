@@ -1,0 +1,657 @@
+2025-04-16 12:08:15,348 - INFO - starting our Model Training Pipeline
+2025-04-16 12:08:15,349 - INFO - Loading data from artifacts/processed\processed_train.csv
+2025-04-16 12:08:15,349 - INFO - Loading data
+2025-04-16 12:08:15,676 - INFO - Loading data from artifacts/processed\processed_test.csv
+2025-04-16 12:08:15,676 - INFO - Loading data
+2025-04-16 12:08:15,827 - INFO - Data Splitting sucessfully for model training
+2025-04-16 12:08:15,828 - INFO - Initializing our model
+2025-04-16 12:08:15,828 - INFO - Starting our hyperparameter tuning
+2025-04-16 12:08:20,402 - ERROR - Error during Training Model: 
+All the 8 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+2 fits failed with the following error:
+Traceback (most recent call last):
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\sklearn\model_selection\_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\sklearn.py", line 1560, in fit
+    super().fit(
+    ~~~~~~~~~~~^
+        X,
+        ^^
+    ...<12 lines>...
+        init_model=init_model,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\sklearn.py", line 1049, in fit
+    self._Booster = train(
+                    ~~~~~^
+        params=params,
+        ^^^^^^^^^^^^^^
+    ...<6 lines>...
+        callbacks=callbacks,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\engine.py", line 297, in train
+    booster = Booster(params=params, train_set=train_set)
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\basic.py", line 3656, in __init__
+    train_set.construct()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\basic.py", line 2590, in construct
+    self._lazy_init(
+    ~~~~~~~~~~~~~~~^
+        data=self.data,
+        ^^^^^^^^^^^^^^^
+    ...<9 lines>...
+        position=self.position,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\basic.py", line 2187, in _lazy_init
+    self.__init_from_np2d(data, params_str, ref_dataset)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\basic.py", line 2318, in __init_from_np2d
+    _safe_call(
+    ~~~~~~~~~~^
+        _LIB.LGBM_DatasetCreateFromMat(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+        )
+        ^
+    )
+    ^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\basic.py", line 313, in _safe_call
+    raise LightGBMError(_LIB.LGBM_GetLastError().decode("utf-8"))
+lightgbm.basic.LightGBMError: Parameter num_leaves should be of type int, got "goss"
+
+--------------------------------------------------------------------------------
+4 fits failed with the following error:
+Traceback (most recent call last):
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\sklearn\model_selection\_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\sklearn.py", line 1560, in fit
+    super().fit(
+    ~~~~~~~~~~~^
+        X,
+        ^^
+    ...<12 lines>...
+        init_model=init_model,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\sklearn.py", line 1049, in fit
+    self._Booster = train(
+                    ~~~~~^
+        params=params,
+        ^^^^^^^^^^^^^^
+    ...<6 lines>...
+        callbacks=callbacks,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\engine.py", line 297, in train
+    booster = Booster(params=params, train_set=train_set)
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\basic.py", line 3656, in __init__
+    train_set.construct()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\basic.py", line 2590, in construct
+    self._lazy_init(
+    ~~~~~~~~~~~~~~~^
+        data=self.data,
+        ^^^^^^^^^^^^^^^
+    ...<9 lines>...
+        position=self.position,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\basic.py", line 2187, in _lazy_init
+    self.__init_from_np2d(data, params_str, ref_dataset)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\basic.py", line 2318, in __init_from_np2d
+    _safe_call(
+    ~~~~~~~~~~^
+        _LIB.LGBM_DatasetCreateFromMat(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+        )
+        ^
+    )
+    ^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\basic.py", line 313, in _safe_call
+    raise LightGBMError(_LIB.LGBM_GetLastError().decode("utf-8"))
+lightgbm.basic.LightGBMError: Parameter num_leaves should be of type int, got "dart"
+
+--------------------------------------------------------------------------------
+2 fits failed with the following error:
+Traceback (most recent call last):
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\sklearn\model_selection\_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\sklearn.py", line 1560, in fit
+    super().fit(
+    ~~~~~~~~~~~^
+        X,
+        ^^
+    ...<12 lines>...
+        init_model=init_model,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\sklearn.py", line 1049, in fit
+    self._Booster = train(
+                    ~~~~~^
+        params=params,
+        ^^^^^^^^^^^^^^
+    ...<6 lines>...
+        callbacks=callbacks,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\engine.py", line 297, in train
+    booster = Booster(params=params, train_set=train_set)
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\basic.py", line 3656, in __init__
+    train_set.construct()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\basic.py", line 2590, in construct
+    self._lazy_init(
+    ~~~~~~~~~~~~~~~^
+        data=self.data,
+        ^^^^^^^^^^^^^^^
+    ...<9 lines>...
+        position=self.position,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\basic.py", line 2187, in _lazy_init
+    self.__init_from_np2d(data, params_str, ref_dataset)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\basic.py", line 2318, in __init_from_np2d
+    _safe_call(
+    ~~~~~~~~~~^
+        _LIB.LGBM_DatasetCreateFromMat(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+        )
+        ^
+    )
+    ^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\basic.py", line 313, in _safe_call
+    raise LightGBMError(_LIB.LGBM_GetLastError().decode("utf-8"))
+lightgbm.basic.LightGBMError: Parameter num_leaves should be of type int, got "gbdt"
+
+2025-04-16 12:08:20,404 - INFO - Error in model training pipeline Error in F:\Data Science Projects\Hotel-Reservations-Prediction\src\model_training.py , line 71 : Failed to train model
+2025-04-16 12:21:37,616 - INFO - Starting model training pipeline
+2025-04-16 12:21:37,645 - INFO - Loading data from artifacts/processed\processed_train.csv
+2025-04-16 12:21:37,646 - INFO - Loading data
+2025-04-16 12:21:38,022 - INFO - Loading data from artifacts/processed\processed_test.csv
+2025-04-16 12:21:38,023 - INFO - Loading data
+2025-04-16 12:21:38,134 - INFO - Training data shape: (39008, 10), Test data shape: (7255, 10)
+2025-04-16 12:21:38,153 - INFO - Class distribution - Train: booking_status
+0    19504
+1    19504
+Name: count, dtype: int64, Test: booking_status
+1    4886
+0    2369
+Name: count, dtype: int64
+2025-04-16 12:21:38,195 - INFO - Initializing LightGBM model
+2025-04-16 12:21:38,195 - INFO - Starting hyperparameter tuning
+2025-04-16 12:21:38,548 - ERROR - Training failed: Parameter num_leaves should be of type int, got "goss"
+Traceback (most recent call last):
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\src\model_training.py", line 92, in train_lgbm
+    random_search.fit(X_train, y_train)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1024, in fit
+    self._run_search(evaluate_candidates)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1951, in _run_search
+    evaluate_candidates(
+    ~~~~~~~~~~~~~~~~~~~^
+        ParameterSampler(
+        ^^^^^^^^^^^^^^^^^
+            self.param_distributions, self.n_iter, random_state=self.random_state
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        )
+        ^
+    )
+    ^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\sklearn\model_selection\_search.py", line 970, in evaluate_candidates
+    out = parallel(
+        delayed(_fit_and_score)(
+    ...<13 lines>...
+        )
+    )
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\sklearn\utils\parallel.py", line 77, in __call__
+    return super().__call__(iterable_with_config)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\joblib\parallel.py", line 1918, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\joblib\parallel.py", line 1847, in _get_sequential_output
+    res = func(*args, **kwargs)
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\sklearn\utils\parallel.py", line 139, in __call__
+    return self.function(*args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\sklearn\model_selection\_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\sklearn.py", line 1560, in fit
+    super().fit(
+    ~~~~~~~~~~~^
+        X,
+        ^^
+    ...<12 lines>...
+        init_model=init_model,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\sklearn.py", line 1049, in fit
+    self._Booster = train(
+                    ~~~~~^
+        params=params,
+        ^^^^^^^^^^^^^^
+    ...<6 lines>...
+        callbacks=callbacks,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\engine.py", line 297, in train
+    booster = Booster(params=params, train_set=train_set)
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\basic.py", line 3656, in __init__
+    train_set.construct()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\basic.py", line 2590, in construct
+    self._lazy_init(
+    ~~~~~~~~~~~~~~~^
+        data=self.data,
+        ^^^^^^^^^^^^^^^
+    ...<9 lines>...
+        position=self.position,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\basic.py", line 2187, in _lazy_init
+    self.__init_from_np2d(data, params_str, ref_dataset)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\basic.py", line 2318, in __init_from_np2d
+    _safe_call(
+    ~~~~~~~~~~^
+        _LIB.LGBM_DatasetCreateFromMat(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+        )
+        ^
+    )
+    ^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\basic.py", line 313, in _safe_call
+    raise LightGBMError(_LIB.LGBM_GetLastError().decode("utf-8"))
+lightgbm.basic.LightGBMError: Parameter num_leaves should be of type int, got "goss"
+
+2025-04-16 12:21:38,553 - ERROR - Pipeline failed: Error in F:\Data Science Projects\Hotel-Reservations-Prediction\src\model_training.py , line 92 : Model training failed
+Traceback (most recent call last):
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\src\model_training.py", line 92, in train_lgbm
+    random_search.fit(X_train, y_train)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1024, in fit
+    self._run_search(evaluate_candidates)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1951, in _run_search
+    evaluate_candidates(
+    ~~~~~~~~~~~~~~~~~~~^
+        ParameterSampler(
+        ^^^^^^^^^^^^^^^^^
+            self.param_distributions, self.n_iter, random_state=self.random_state
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        )
+        ^
+    )
+    ^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\sklearn\model_selection\_search.py", line 970, in evaluate_candidates
+    out = parallel(
+        delayed(_fit_and_score)(
+    ...<13 lines>...
+        )
+    )
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\sklearn\utils\parallel.py", line 77, in __call__
+    return super().__call__(iterable_with_config)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\joblib\parallel.py", line 1918, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\joblib\parallel.py", line 1847, in _get_sequential_output
+    res = func(*args, **kwargs)
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\sklearn\utils\parallel.py", line 139, in __call__
+    return self.function(*args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\sklearn\model_selection\_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\sklearn.py", line 1560, in fit
+    super().fit(
+    ~~~~~~~~~~~^
+        X,
+        ^^
+    ...<12 lines>...
+        init_model=init_model,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\sklearn.py", line 1049, in fit
+    self._Booster = train(
+                    ~~~~~^
+        params=params,
+        ^^^^^^^^^^^^^^
+    ...<6 lines>...
+        callbacks=callbacks,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\engine.py", line 297, in train
+    booster = Booster(params=params, train_set=train_set)
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\basic.py", line 3656, in __init__
+    train_set.construct()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\basic.py", line 2590, in construct
+    self._lazy_init(
+    ~~~~~~~~~~~~~~~^
+        data=self.data,
+        ^^^^^^^^^^^^^^^
+    ...<9 lines>...
+        position=self.position,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\basic.py", line 2187, in _lazy_init
+    self.__init_from_np2d(data, params_str, ref_dataset)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\basic.py", line 2318, in __init_from_np2d
+    _safe_call(
+    ~~~~~~~~~~^
+        _LIB.LGBM_DatasetCreateFromMat(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+        )
+        ^
+    )
+    ^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\basic.py", line 313, in _safe_call
+    raise LightGBMError(_LIB.LGBM_GetLastError().decode("utf-8"))
+lightgbm.basic.LightGBMError: Parameter num_leaves should be of type int, got "goss"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\src\model_training.py", line 137, in run
+    model = self.train_lgbm(X_train, y_train)
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\src\model_training.py", line 103, in train_lgbm
+    raise CustomException("Model training failed", sys)
+src.custom_exception.CustomException: Error in F:\Data Science Projects\Hotel-Reservations-Prediction\src\model_training.py , line 92 : Model training failed
+
+2025-04-16 12:21:38,554 - ERROR - Fatal error: Error in F:\Data Science Projects\Hotel-Reservations-Prediction\src\model_training.py , line 137 : Training pipeline failed
+2025-04-16 12:33:23,099 - INFO - Starting model training pipeline
+2025-04-16 12:33:23,099 - INFO - Loading data from artifacts/processed\processed_train.csv
+2025-04-16 12:33:23,099 - INFO - Loading data
+2025-04-16 12:33:23,155 - INFO - Loading data from artifacts/processed\processed_test.csv
+2025-04-16 12:33:23,155 - INFO - Loading data
+2025-04-16 12:33:23,173 - INFO - Training data shape: (39008, 10), Test data shape: (7255, 10)
+2025-04-16 12:33:23,175 - INFO - Class distribution - Train: booking_status
+0    19504
+1    19504
+Name: count, dtype: int64, Test: booking_status
+1    4886
+0    2369
+Name: count, dtype: int64
+2025-04-16 12:33:23,215 - INFO - Initializing LightGBM model
+2025-04-16 12:33:23,215 - INFO - Starting hyperparameter tuning
+2025-04-16 12:33:23,253 - ERROR - Training failed: Unknown boosting type gdbt
+Traceback (most recent call last):
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\src\model_training.py", line 92, in train_lgbm
+    random_search.fit(X_train, y_train)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1024, in fit
+    self._run_search(evaluate_candidates)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1951, in _run_search
+    evaluate_candidates(
+    ~~~~~~~~~~~~~~~~~~~^
+        ParameterSampler(
+        ^^^^^^^^^^^^^^^^^
+            self.param_distributions, self.n_iter, random_state=self.random_state
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        )
+        ^
+    )
+    ^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\sklearn\model_selection\_search.py", line 970, in evaluate_candidates
+    out = parallel(
+        delayed(_fit_and_score)(
+    ...<13 lines>...
+        )
+    )
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\sklearn\utils\parallel.py", line 77, in __call__
+    return super().__call__(iterable_with_config)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\joblib\parallel.py", line 1918, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\joblib\parallel.py", line 1847, in _get_sequential_output
+    res = func(*args, **kwargs)
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\sklearn\utils\parallel.py", line 139, in __call__
+    return self.function(*args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\sklearn\model_selection\_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\sklearn.py", line 1560, in fit
+    super().fit(
+    ~~~~~~~~~~~^
+        X,
+        ^^
+    ...<12 lines>...
+        init_model=init_model,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\sklearn.py", line 1049, in fit
+    self._Booster = train(
+                    ~~~~~^
+        params=params,
+        ^^^^^^^^^^^^^^
+    ...<6 lines>...
+        callbacks=callbacks,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\engine.py", line 297, in train
+    booster = Booster(params=params, train_set=train_set)
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\basic.py", line 3656, in __init__
+    train_set.construct()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\basic.py", line 2590, in construct
+    self._lazy_init(
+    ~~~~~~~~~~~~~~~^
+        data=self.data,
+        ^^^^^^^^^^^^^^^
+    ...<9 lines>...
+        position=self.position,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\basic.py", line 2187, in _lazy_init
+    self.__init_from_np2d(data, params_str, ref_dataset)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\basic.py", line 2318, in __init_from_np2d
+    _safe_call(
+    ~~~~~~~~~~^
+        _LIB.LGBM_DatasetCreateFromMat(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+        )
+        ^
+    )
+    ^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\basic.py", line 313, in _safe_call
+    raise LightGBMError(_LIB.LGBM_GetLastError().decode("utf-8"))
+lightgbm.basic.LightGBMError: Unknown boosting type gdbt
+
+2025-04-16 12:33:23,263 - ERROR - Pipeline failed: Error in F:\Data Science Projects\Hotel-Reservations-Prediction\src\model_training.py , line 92 : Model training failed
+Traceback (most recent call last):
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\src\model_training.py", line 92, in train_lgbm
+    random_search.fit(X_train, y_train)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\sklearn\base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1024, in fit
+    self._run_search(evaluate_candidates)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\sklearn\model_selection\_search.py", line 1951, in _run_search
+    evaluate_candidates(
+    ~~~~~~~~~~~~~~~~~~~^
+        ParameterSampler(
+        ^^^^^^^^^^^^^^^^^
+            self.param_distributions, self.n_iter, random_state=self.random_state
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        )
+        ^
+    )
+    ^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\sklearn\model_selection\_search.py", line 970, in evaluate_candidates
+    out = parallel(
+        delayed(_fit_and_score)(
+    ...<13 lines>...
+        )
+    )
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\sklearn\utils\parallel.py", line 77, in __call__
+    return super().__call__(iterable_with_config)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\joblib\parallel.py", line 1918, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\joblib\parallel.py", line 1847, in _get_sequential_output
+    res = func(*args, **kwargs)
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\sklearn\utils\parallel.py", line 139, in __call__
+    return self.function(*args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\sklearn\model_selection\_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\sklearn.py", line 1560, in fit
+    super().fit(
+    ~~~~~~~~~~~^
+        X,
+        ^^
+    ...<12 lines>...
+        init_model=init_model,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\sklearn.py", line 1049, in fit
+    self._Booster = train(
+                    ~~~~~^
+        params=params,
+        ^^^^^^^^^^^^^^
+    ...<6 lines>...
+        callbacks=callbacks,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\engine.py", line 297, in train
+    booster = Booster(params=params, train_set=train_set)
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\basic.py", line 3656, in __init__
+    train_set.construct()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\basic.py", line 2590, in construct
+    self._lazy_init(
+    ~~~~~~~~~~~~~~~^
+        data=self.data,
+        ^^^^^^^^^^^^^^^
+    ...<9 lines>...
+        position=self.position,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\basic.py", line 2187, in _lazy_init
+    self.__init_from_np2d(data, params_str, ref_dataset)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\basic.py", line 2318, in __init_from_np2d
+    _safe_call(
+    ~~~~~~~~~~^
+        _LIB.LGBM_DatasetCreateFromMat(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+        )
+        ^
+    )
+    ^
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\venv\Lib\site-packages\lightgbm\basic.py", line 313, in _safe_call
+    raise LightGBMError(_LIB.LGBM_GetLastError().decode("utf-8"))
+lightgbm.basic.LightGBMError: Unknown boosting type gdbt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\src\model_training.py", line 137, in run
+    model = self.train_lgbm(X_train, y_train)
+  File "F:\Data Science Projects\Hotel-Reservations-Prediction\src\model_training.py", line 103, in train_lgbm
+    raise CustomException("Model training failed", sys)
+src.custom_exception.CustomException: Error in F:\Data Science Projects\Hotel-Reservations-Prediction\src\model_training.py , line 92 : Model training failed
+
+2025-04-16 12:33:23,263 - ERROR - Fatal error: Error in F:\Data Science Projects\Hotel-Reservations-Prediction\src\model_training.py , line 137 : Training pipeline failed
+2025-04-16 12:34:07,085 - INFO - Starting model training pipeline
+2025-04-16 12:34:07,085 - INFO - Loading data from artifacts/processed\processed_train.csv
+2025-04-16 12:34:07,086 - INFO - Loading data
+2025-04-16 12:34:07,179 - INFO - Loading data from artifacts/processed\processed_test.csv
+2025-04-16 12:34:07,179 - INFO - Loading data
+2025-04-16 12:34:07,204 - INFO - Training data shape: (39008, 10), Test data shape: (7255, 10)
+2025-04-16 12:34:07,207 - INFO - Class distribution - Train: booking_status
+0    19504
+1    19504
+Name: count, dtype: int64, Test: booking_status
+1    4886
+0    2369
+Name: count, dtype: int64
+2025-04-16 12:34:07,267 - INFO - Initializing LightGBM model
+2025-04-16 12:34:07,267 - INFO - Starting hyperparameter tuning
+2025-04-16 12:34:18,159 - INFO - Hyperparameter tuning completed
+2025-04-16 12:34:18,159 - INFO - Best parameters: {'boosting_type': 'goss', 'learning_rate': np.float64(0.028413825967952562), 'max_depth': 8, 'n_estimators': 202, 'num_leaves': 31}
+2025-04-16 12:34:18,159 - INFO - Evaluating model performance
+2025-04-16 12:34:18,271 - INFO - Metrics: {'accuracy': 0.8719503790489318, 'precision': 0.9122733902896437, 'recall': 0.896029471960704, 'f1_score': 0.9040784718637067}
+2025-04-16 12:34:18,295 - INFO - Model saved to artifacts/models/lgbm_model.pkl
+2025-04-16 12:34:18,295 - INFO - Model training completed successfully
+2025-04-16 13:05:06,426 - INFO - Starting model training pipeline
+2025-04-16 13:05:06,455 - INFO - Starting our MLFLOW experimentation
+2025-04-16 13:05:06,455 - INFO - Logging the training and testing dataset to MLFLOW
+2025-04-16 13:05:06,518 - INFO - Loading data from artifacts/processed\processed_train.csv
+2025-04-16 13:05:06,518 - INFO - Loading data
+2025-04-16 13:05:06,839 - INFO - Loading data from artifacts/processed\processed_test.csv
+2025-04-16 13:05:06,839 - INFO - Loading data
+2025-04-16 13:05:06,885 - INFO - Training data shape: (39008, 10), Test data shape: (7255, 10)
+2025-04-16 13:05:06,890 - INFO - Class distribution - Train: booking_status
+0    19504
+1    19504
+Name: count, dtype: int64, Test: booking_status
+1    4886
+0    2369
+Name: count, dtype: int64
+2025-04-16 13:05:06,995 - INFO - Initializing LightGBM model
+2025-04-16 13:05:06,995 - INFO - Starting hyperparameter tuning
+2025-04-16 13:05:20,427 - INFO - Hyperparameter tuning completed
+2025-04-16 13:05:20,427 - INFO - Best parameters: {'boosting_type': 'goss', 'learning_rate': np.float64(0.028413825967952562), 'max_depth': 8, 'n_estimators': 202, 'num_leaves': 31}
+2025-04-16 13:05:20,427 - INFO - Evaluating model performance
+2025-04-16 13:05:20,519 - INFO - Metrics: {'accuracy': 0.8719503790489318, 'precision': 0.9122733902896437, 'recall': 0.896029471960704, 'f1_score': 0.9040784718637067}
+2025-04-16 13:05:20,544 - INFO - Model saved to artifacts/models/lgbm_model.pkl
+2025-04-16 13:05:20,545 - INFO - Logging the model into MLFLOW
+2025-04-16 13:05:20,548 - INFO - Logging the params and metrics to MLFLOW
+2025-04-16 13:05:20,883 - INFO - Model training completed successfully
